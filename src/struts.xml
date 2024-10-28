@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="successDel">/common/del_success.jsp</result>
+            <result name="successUpdate">/common/update_success.jsp</result>
+        </global-results>
+        
+        
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+        <action name="adminManageFenye" class="adminAction" method="adminManageFenye">
+            <result name="success">/admin/index/adminManageFenye.jsp</result>
+        </action>
+        
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userManage" class="userAction" method="userManage">
+             <result name="success">/admin/user/userManage.jsp</result>
+        </action>
+        <action name="cardUserManage" class="userAction" method="cardUserManage">
+             <result name="success">/admin/user/cardUserManage.jsp</result>
+        </action>
+        <action name="cardUserDel" class="userAction" method="cardUserDel">
+        </action>
+        <action name="userCardFen" class="userAction" method="userCardFen">
+        </action>
+        <action name="cardJine" class="userAction" method="cardJine">
+             <result name="success">/cardUser/card/cardJine.jsp</result>
+        </action>
+        <action name="cardJine1" class="userAction" method="cardJine1">
+             <result name="success">/cardUser/card/cardJine1.jsp</result>
+        </action>
+        <action name="userCardSearch" class="userAction" method="userCardSearch">
+             <result name="success">/admin/user/userCardSearch_re.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="chongzhiShen" class="chongzhiAction" method="chongzhiShen">
+        </action>
+        <action name="chongzhiMana" class="chongzhiAction" method="chongzhiMana">
+            <result name="success">/admin/card/chongzhiMana.jsp</result>
+        </action>
+        <action name="chongzhiDel" class="chongzhiAction" method="chongzhiDel">
+        </action>
+        <action name="chongzhiAdd" class="chongzhiAction" method="chongzhiAdd">
+        </action>
+        
+        
+        
+        <action name="xiaofeiAdd" class="xiaofeiAction" method="xiaofeiAdd">
+        </action>
+        <action name="xiaofeiDel" class="xiaofeiAction" method="xiaofeiDel">
+        </action>
+        <action name="xiaofeijilu" class="xiaofeiAction" method="xiaofeijilu">
+            <result name="success">/cardUser/card/xiaofeijilu.jsp</result>
+        </action>
+        <action name="xiaofeiEditPre" class="xiaofeiAction" method="xiaofeiEditPre">
+            <result name="success">/cardUser/card/xiaofeiEdit.jsp</result>
+        </action>
+        <action name="xiaofeiEdit" class="xiaofeiAction" method="xiaofeiEdit">
+        </action>
+        
+        
+        
+        <action name="touzhiMy" class="touzhiAction" method="touzhiMy">
+            <result name="success">/cardUser/touzhi/touzhiMy.jsp</result>
+        </action>
+        
+        
+        
+        <action name="zhuxiao" class="zhuxiaoAction" method="zhuxiao">
+            <result name="success">/cardUser/zhuxiao/zhuxiao_re.jsp</result>
+        </action>
+        <action name="zhuxiaoAll" class="zhuxiaoAction" method="zhuxiaoAll">
+            <result name="success">/admin/zhuxiao/zhuxiaoAll.jsp</result>
+        </action>
+        <action name="zhuxiaoByAdmin" class="zhuxiaoAction" method="zhuxiaoByAdmin">
+        </action>
+    </package>
+</struts>
